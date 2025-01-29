@@ -1,0 +1,616 @@
+/* Global styles for the page */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+padding: 50px;
+}
+
+.btn {
+background-color: #003366;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+text-decoration: none;
+}
+
+.btn:hover {
+background-color: #0066cc;
+}
+
+form label {
+display: block;
+margin-top: 20px;
+}
+
+form input,
+form textarea {
+padding: 10px;
+margin-top: 5px;
+border: none;
+border-radius: 5px;
+}
+
+form input[type="submit"] {
+background-color: #003366;
+color: #fff;
+}
+
+footer {
+background-color: #f2f2f2;
+padding: 20px;
+text-align: center;
+}
+
+
+/* Styles for the hero section */
+
+#hero {
+    background-image: url('img/m1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  #hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  #hero p {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 40px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  #hero button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Animation for the hero section */
+  
+  #hero h1.animate {
+    opacity: 1;
+  }
+  
+  #hero p.animate {
+    opacity: 1;
+  }
+  
+  #hero button.animate {
+    opacity: 1;
+  }
+
+  
+
+  #radiology {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  #radiology h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #radiology h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #radiology p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  #radiology img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  /* Styles for the radiology section columns */
+  
+  #radiology .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  #radiology .col-md-6 {
+    width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  @media (max-width: 767px) {
+    #radiology .col-md-6 {
+      width: 100%;
+    }
+  }
+  
+  /* Animation for the radiology section images */
+  
+  #radiology img.animate {
+    opacity: 1;
+  }
+
+  /* Styles for the radiology images with animation */
+  #radiology img {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    animation: slide-up 0.5s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    to {
+      opacity: 100%;
+      transform: translateY(0);
+    }
+  }
+
+/* Styles for the doctor section */
+
+#doctors {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+}
+
+#doctors .doctor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#doctors h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#doctors .doctor-item {
+  position: relative;
+  padding: 30px;
+  width: 350px;
+  margin: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+#doctors .doctor-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+#doctors .doctor-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#doctors .doctor-item h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#doctors .doctor-item p {
+  font-size: 1.2rem;
+  color: #666;
+}
+  
+  /* Animation for the doctor section images */
+  
+  #doctor img.animate {
+    opacity: 1;
+  }
+
+  #laboratory {
+    background-color: #fff;
+    padding: 50px 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  #laboratory h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #laboratory h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #laboratory p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  #laboratory img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  
+  /* Styles for the laboratory section columns */
+  
+  #laboratory .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  #laboratory .col-md-6 {
+    width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  @media (max-width: 767px) {
+    #laboratory .col-md-6 {
+      width: 100%;
+    }
+  }
+
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Styles for the services section */
+
+  #services {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+  }
+  
+  #services .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #services .service-item {
+    position: relative;
+    padding: 30px;
+    width: 350px;
+    margin: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #services .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  #services .service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #services .service-item h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  #services .service-item p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+  
+  .login-container {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    animation: slide-in 1s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f2f2;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type='text'],
+  input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+  }
+  
+  button.btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #0078d7;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn:hover {
+    background-color: #005a9e;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  #about {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+  }
+  
+  #about .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #about h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-item {
+    position: relative;
+    width: 45%;
+    margin: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .about-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .about-item p {
+    font-size: 1.2rem;
+    padding: 20px;
+    color: #666;
+    line-height: 1.5;
+  }
+
+
+  #contact {
+    background-color: #003366;
+    color: #fff;
+    padding: 80px 0;
+  }
+  
+  #contact .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 3rem;
+    margin-bottom: 60px;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #contact form input,
+  #contact form textarea {
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #dce0f7;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  
+  #contact form textarea {
+    height: 150px;
+  }
+  
+  #contact form button {
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #00bcd4;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #contact form button:hover {
+    background-color: #008ba3;
+  }
+  
+  #contact .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  #contact .social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+    background-color: #dce0f7;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #contact .social-icons a:hover {
+    background-color: #00bcd4;
+  }
+  
+  #contact .social-icons i {
+    font-size: 1.8rem;
+    color: #fff;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .row h3 {
+    margin-bottom: 30px;
+  }
+  
+  .contact-info {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-links li {
+    margin: 0 10px;
+  }
+  
+  .social-links a {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #3b5998;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    transform: translateY(-5px);
+  }
